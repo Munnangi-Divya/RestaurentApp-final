@@ -58,8 +58,12 @@
   width: fit-content;
   min-width: 150px;
   justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 10px;
   border-radius: 50px;
+  background-color: green;
 }
 
 .button {
@@ -107,3 +111,4 @@
   border-radius: 12px;
   align-self: flex-start;
 }
+

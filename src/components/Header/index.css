@@ -1,5 +1,14 @@
 .nav-header {
   box-shadow: 0px 10px 10px -15px #111;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 4px;
+  align-items: center;
+}
+.cart-container {
+  display: flex;
+  align-items: center;
 }
 
 .logo-heading {
@@ -7,6 +16,7 @@
   font-weight: 600;
   font-size: 35px;
   cursor: pointer;
+  margin-left: 3%;
 }
 
 @media screen and (max-width: 576px) {
@@ -20,16 +30,24 @@
   font-weight: 500;
   font-size: 18px;
   color: #585555;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0.5rem;
+  display: none;
 }
 
 .cart-icon-container {
   position: relative;
+  margin-right: 20px;
 }
 
 .cart-count-badge {
   position: absolute;
   top: -15px;
   right: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cart-count {
@@ -42,4 +60,14 @@
   font-size: 14px;
   min-width: 25px;
   border-radius: 50%;
+}
+.cart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (min-width: 576px){
+    .my-orders-text {
+        display: block;
+    }
 }
